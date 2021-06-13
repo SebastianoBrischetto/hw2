@@ -1,0 +1,195 @@
+@media (max-width: 500px){
+	section{
+		padding: 20px 0px;
+	}
+}
+.list{
+	padding: 0px;
+}
+.list_element {
+	height: auto;
+	width: calc(100% - 10px);
+	padding: 5px;
+	margin: 0px;
+	display: flex;
+	border-bottom: solid 1px lightgrey;
+}
+.list_element_image, .list_element_info, .list_element_action{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.list_element_image{
+	height: 85px;
+	width: 85px;
+	border: solid 1px lightgrey;
+	border-radius: 10px;
+	margin-right: 15px;
+	flex-wrap: wrap;
+}
+@media (max-width: 500px){
+	.list_element_image{
+		height: 45px;
+		width: 45px;
+	}
+}
+.list_element_image img{
+	width: calc(50% - 1px);
+	height: calc(50% - 1px);
+}
+.list_element_description{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: left;
+}
+.list_element_description span{
+	margin: 0px;
+}
+.list_element_info{
+	width: 125px;
+	text-align: center;
+}
+@media (max-width: 500px){
+	.list_element_info{
+		width: 85px;
+	}
+}
+.list_element_action{
+	width: 35px;
+}
+@media (max-width: 500px){
+	.list_element_action{
+		width: 25px;
+	}
+}
+.list_element .round_button{
+	height: 25px;
+	background-Color: grey;
+	transition: background-Color 0.25s;
+}
+@media (max-width: 500px){
+	.list_element .round_button{
+		height: 15px;
+	}
+}
+.list_element .round_button:hover{
+	background-color: #05418b;
+}
+@media (max-width: 500px){
+	.content_block{
+		padding: 0px;
+	}
+}
+.light_grey{
+	width: 35%;
+}
+@media (max-width: 500px){
+	.light_grey{
+		width: calc(100% - 2px);
+	}
+}
+.content_block_left{
+	border-width: 1px 1px 0px;
+	border-color: lightgrey;
+	border-style: solid;
+}
+@media (max-width: 500px){
+	#cart .list{
+		margin-bottom: 20px;
+	}
+}
+#payment_buttons{
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+@media (max-width: 500px){
+	#payment_buttons{
+		margin: 0px;
+		justify-content: center;
+		align-items: center;
+		order: 2;
+	}
+}
+#payment_buttons .buttons{
+	border-radius: 5px;
+	margin-left: 5px;
+	height: 30px;
+}
+@media (max-width: 500px){
+	#payment_buttons .buttons{
+		padding: 5px 5px;
+		margin: 0px 5px;
+		height: 20px;
+	}
+}
+#Paypal{
+	background-image: url("../images/buttons/paypal.png");
+}
+#Gpay{
+	background-image: url("../images/buttons/g-pay.png");
+}
+#Paypal, #Gpay{
+	width: 140px;
+	padding: 9px 4px;
+	background-size: auto 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+@media (max-width: 500px){
+	#Paypal, #Gpay{
+		padding: 5px 5px;
+		background-size: auto 20px;
+	}
+}
+.empty{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.empty img{
+	max-width: 250px;
+	height: auto;
+}
+@media (max-width: 500px){
+	.empty img{
+		max-width: 150px;
+	}
+}
+#subscriptions{
+	padding: 0px;
+	margin-bottom: 20px;
+}
+#custom_subscriptions{
+	margin-top: 20px;
+}
+@media (max-width: 500px){
+	#custom_subscriptions{
+		order: 2;
+		margin-top: 0px;
+		width: calc(100% - 30px);
+	}
+}
+#custom_subscriptions .list_element{
+	font-size: 0.75rem;
+	background-Color: white;
+	margin: 5px 0px;
+	outline: solid 1px lightgrey;
+}
+#custom_subscriptions .list_element_image{
+	height: 60px;
+	width: 60px;
+}
+@media (max-width: 500px){
+	#custom_subscriptions .list_element_image{
+		height: 35px;
+		width: 35px;
+	}
+}
